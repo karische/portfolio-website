@@ -93,3 +93,22 @@ a:active {
 .text-align-center {
   text-align: center;
 }
+
+.social-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.social-profile-link, .social-profile-link:hover {
+  text-decoration: none;
+}
+
+.social-icon {
+  font-size: 3em; 
+  color: #2D7A76;
+}
