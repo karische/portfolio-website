@@ -10,16 +10,19 @@ Dark Grey: #131313
 /* fonts and typography */
 
 body {
+
   background-color: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 16px;  /* Sets the font size to 16 */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #131313;
+
 }
 
 h1,
-h2, {
+h2,
+h3, {
 
   line-height: 1.4;
 }
@@ -35,8 +38,62 @@ h2 {
   font-weight: 400;
 }
 
-/* images */
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+span {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5em;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/* imagery */
 
 img {
   width: 100%;
+}
+
+/* buttons and links */
+
+a:visited {
+  color: #F6CA81;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #131313;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2D7A76;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #2D7A76;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #2D7A76;
+  text-transform: uppercase;
+  border: 2px solid #2D7A76;
+}
+
+.button.contact:hover {
+  background-color: #2D7A76;
+  color: #ffffff;
 }
