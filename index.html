@@ -18,63 +18,61 @@
 </head>
 
 <body>
-
-  <header>
-
-    <div>
-      <img src="img/IconLogo.jpg" alt="Katharina Rische">
+  <header><!-- start header section -->
+    <div class="container">
+      <img src="img/IconLogo.jpg" width="200px" height="90px" alt="Katharina Rische">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </header><!-- end header section -->
 
   <main>
-      <!-- Intro starts here -->
-      <div id="intro">
-        <div class="text-align-center">
-          <h1>Hello, I am Katharina</H1>
-          <h3>UI Designer in Berlin</h3>
-        </div>
+    <div id="hero"><!-- start hero section -->
+      <div class="container">
+        <h1>Hello, I am Katharina</H1>
+        <h3>UI Designer in Berlin</h3>
+      </div>
+      <p>
+        One of my favorite sayings is by Maya Angelou, "people will forget what you said, people will forget what you did,
+        but people will never forget how you made them feel." I want to design intuitive and inspiring products for a positive user experience.
+      </p>
+    </div><!-- end hero section -->
+
+
+    <div id="My Work"><!-- Start Project Work -->
+      <div class="container"> <!-- Start container -->
+      <h2>My Work</h2>
+      <div>
+        <h3>Spiritly - The Mental Health App</h3> <!-- Start Project One -->
+        <picture>
+          <source srcset="img/spiritly/Intro.jpg" media="(max-width:200px)">
+          <img src="img/spiritly/Intro.jpg" alt="Spiritly Cover Image">
+        </picture>
         <p>
-          One of my favorite sayings is by Maya Angelou, "people will forget what you said, people will forget what you did,
-          but people will never forget how you made them feel." I want to design intuitive and inspiring products for a positive user experience.
+          Spiritly encourages users in their goal to focus on mental health and train mental strength,
+          by using tools to help them to declutter their lives and help to reduce stress,
+          so users have free time and energy for things they like to do.
         </p>
-      </div>
-      <!-- Intro ends -->
-      <!-- Work starts here -->
-      <div id="My Work">
-        <h2>My Work</h2>
-        <div>
-          <h3>Spiritly - The Mental Health App</h3>
-          <picture>
-            <source srcset="img/spiritly/Intro.jpg" media="(max-width:767px)">
-            <img src="img/spiritly/Intro.jpg" alt="Spiritly Cover Image">
-          </picture>
-          <p>
-            Spiritly encourages users in their goal to focus on mental health and train mental strength,
-            by using tools to help them to declutter their lives and help to reduce stress,
-            so users have free time and energy for things they like to do.
-          </p>
-          <p>Specifications</p>
-          <p>Role: UX Researcher/UI Designer</p>
-          <p>Tools: Sketch/AdobeXD/Invision</p>
-          <p>Scale:100+hours/10+tasks</p>
-          <p>Skills: Competitive Analysis, User Flow, Wireframing, Prototyping, User Interface and Material Design Guidelines, Branding, Style Guide
-          </p>
-          <a href="spiritly.html" class="button">Find out more</a>
-        </div>
-      </div>
-      <!-- Work ends -->
+        <p>Specifications</p>
+        <p>Role: UX Researcher/UI Designer</p>
+        <p>Tools: Sketch/AdobeXD/Invision</p>
+        <p>Scale:100+hours/10+tasks</p>
+        <p>Skills: Competitive Analysis, User Flow, Wireframing, Prototyping, User Interface and Material Design Guidelines, Branding, Style Guide
+        </p>
+        <a href="spiritly.html" class="button">Find out more</a>
+      </div> <!-- End Project One -->
+      </div> <!-- End container -->
+    </div> <!-- End Project Work -->
   </main>
 
   <footer>
-    <!-- connect starts here -->
-    <h2>Let's connect</h2>
+    <div class="container">
+    <h2>Let's connect</h2><!-- connect starts here -->
     <p>
       Looking forward to discuss and exchange opportunities. Feel free to get in touch.
     </p>
