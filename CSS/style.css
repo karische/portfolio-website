@@ -17,21 +17,43 @@ html {
 }
 
 /* Layout styling */
-/* Header styling */
+/* Body styling */
 
 header {
     position: relative;
     width: 100%;
     background-color: #FFFFFF;
-    padding: #10px 5px 15px 5px;
-    margin: #10px 5px 15px 5px;
+    padding: #10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+    margin: 0 auto;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
     -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
     box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-    border-bottom: 10px solid #2D7A76;
+    border-bottom: 1px solid #2D7A76;
   }
 
-/* Body styling */
+nav {
+  height: 2rem;
+  padding-top: .5;
+  padding-bottom: .5;
+  margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1.75rem;
+  }
+
+nav li {
+  float: left;
+  padding-right: 1.75rem
+}
+
+main {
+  clear: left;
+  margin-top: 1rem;
+  }
+
 body {
   background-color: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
@@ -39,9 +61,42 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #131313;
+  }
 
-  .container {
+.container {
   padding: 0 15px;
+}
+
+/* Create thwo columns that floats next to each other */
+
+.pagewrapper {
+  margin: 15px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 15px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.project1 {
+  height: 120px;
+  padding-bottom: 20px;
+}
+.textproject1 {
+  height: 100px;
+  margin: 15px;
+  padding-bottom: 20px;
+}
+
+.center {
+  text-align: center;
 }
 
 h1,
@@ -54,11 +109,13 @@ h3, {
 h1 {
   font-size: 2.75em;
   font-weight: 500;
-}
+  }
 
 h2 {
   font-size: 2.25em;
   font-weight: 400;
+  text-align: center;
+  padding: 10px;
 }
 
 h3 {
@@ -66,10 +123,9 @@ h3 {
   font-weight: 300;
 }
 
-/* imagery */
-
 img {
   width: 100%;
+  height: auto;
 }
 
 /* buttons and links */
@@ -103,15 +159,14 @@ a:active {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #2D7A76;
+  color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #2D7A76;
+  border: 2px solid #ffffff;
 }
 
 .button.contact:hover {
-  background-color: #2D7A76;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #2D7A76;
 }
 
 .text-align-center {
@@ -134,5 +189,25 @@ a:active {
 
 .social-icon {
   font-size: 3em;
-  color: #2D7A76;
+  color: #ffffff;
+}
+
+footer {
+  clear: both;
+  height: 10rem;
+  margin-top: 1rem;
+  background-color: #2D7A76;
+  padding: #10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  border-top: 1px solid #2D7A76;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #2D7A76;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: bottom
 }
