@@ -77,7 +77,8 @@ body {
 .row {
   display: flex;
   width: 100%;
-  margin: 15px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 .column {
   display: flex;
