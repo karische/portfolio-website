@@ -19,24 +19,24 @@
 
 <body>
 
-  <header>
-    <!-- start header section -->
-    <div class="container">
-      <h2>Katharina Rische I UI Designer</h2>
+  <header><!-- start header section -->
+    <div class="container"><!-- start container -->
+      <div class="navtoggle" id="myNavtoggle"><!-- start navtoggle -->
+      <h3>Katharina Rische I UI Designer</h3>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="menuicon" onclick="menutoggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </div> <!-- end navtoggle -->
+  </div><!-- end container -->
+  </header><!-- end header section -->
 
-  <main>
-    <!-- content about me starts here -->
-    <div id="hero" class="center">
-      <!-- start hero section -->
+  <main><!-- content about me starts here -->
+    <div id="hero" class="center"><!-- start hero section -->
       <h1>Hello, I am Katharina!</h1>
       <h3>
         UI Designer with the urge to deliver user-friendly products by intuitive and inspiring design with a focus on user needs.
@@ -94,6 +94,7 @@
       </div> <!-- social icons end -->
     </div><!-- footer ends here -->
   </footer>
+  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

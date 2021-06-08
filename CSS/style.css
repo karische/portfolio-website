@@ -113,7 +113,7 @@ header {
     position: relative;
     width: 100%;
     background-color: #FFFFFF;
-    padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+    padding: 25px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
     margin: 0 auto;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
     -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
@@ -121,24 +121,41 @@ header {
     border-bottom: 5px solid #2D7A76;
   }
 
-nav {
-  height: 2rem;
-  padding-top: .5;
-  padding-bottom: .5;
-  margin: 0 auto;
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 1.75rem;
-    display: flex;
-    justify-content: center;
-  }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
-nav li {
-  float: left;
-  padding-right: 1.75rem
+.navtoggle {
+  position: relative;
+}
+
+.navtoggle li .menuicon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 12px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  text-align: right;
+  padding: 10px 0;
+  border-top: 1px solid #915f1c;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0;
 }
 
 main {
@@ -181,7 +198,7 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 300;
-  padding: 30px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  padding: 45px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
   margin: 0 auto;
   text-align: center;
   justify-content: space-around;
