@@ -6,12 +6,11 @@ Dark Turquoise Green: #2D7A76
 Blue: # 205E84
 Dark Grey: #131313
 */
-
 /* fonts and typography */
-
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,28 +22,24 @@ html {
 }
 
 .center {
-text-align: center;
-margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 
 /* Layout styling */
 /* Body styling */
-
 header {
-    position: relative;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 25px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
-    margin: 0 auto;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-    box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-    border-bottom: 5px solid #2D7A76;
-  }
 
+  position: relative;
+  width: 100%;
+  padding: 25px 5px 15px 5px;/* Adds 10px top, 5px right, 15px bottom, 5px left */
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  border-bottom: 5px solid #2D7A76;
+}
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -86,16 +81,19 @@ nav > ul {
 main {
   clear: left;
   margin-top: 1rem;
-  }
+}
 
 body {
   background-color: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 16px;  /* Sets the font size to 16 */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16 */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #131313;
-  }
+}
 
 .container {
   padding: 0 15px;
@@ -103,8 +101,7 @@ body {
 
 h1,
 h2,
-h3, {
-
+h3 {
   line-height: 1.4;
 }
 
@@ -112,7 +109,7 @@ h1 {
   font-size: 2.75em;
   font-weight: 500;
   text-align: center;
-  }
+}
 
 h2 {
   font-size: 2.25em;
@@ -123,7 +120,8 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 300;
-  padding: 45px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  padding: 45px 5px 15px 5px;
+  /* Adds 10px top, 5px right, 15px bottom, 5px left */
   margin: 0 auto;
   text-align: center;
   justify-content: space-around;
@@ -150,38 +148,31 @@ svg {
   max-width: 750px;
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
 
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
 /* buttons and links */
-
 a:visited {
+  background-color: #ffffff;
   color: #2D7A76;
   text-decoration: none;
 }
@@ -189,7 +180,9 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
+  background-color: #ffffff;
   color: #2D7A76;
+  text-decoration-color: #ffffff;
   text-decoration: underline;
 }
 
@@ -200,19 +193,20 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #2D7A76;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 
 .button:hover {
-  opacity: 0.9; /* Reduces the opacity of the button to 80% */
+  opacity: 0.9;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   background-color: #2D7A76;
   color: #ffffff;
 }
 
 .button.contact {
+  background-color: #2D7A76;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ffffff;
@@ -245,6 +239,7 @@ a:active {
 
 .social-icon {
   font-size: 3em;
+  background-color: #2D7A76;
   color: #ffffff;
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -255,59 +250,64 @@ footer {
   margin-top: 4rem;
   color: #ffffff;
   background-color: #2D7A76;
-  padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  padding: 10px 5px 15px 5px;  /* Adds 10px top, 5px right, 15px bottom, 5px left */
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  border-top: 1px solid #2D7A76;
   font-size: 11px;
   text-align: center;
   vertical-align: bottom;
 }
 
-
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 640px) {
   header {
-   text-align: unset;
-   padding: 20px 0 13px;
- }
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
   nav {
-   width: auto;
-   margin-top: 4px;
- }
- .hero-image {
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-}
+    width: auto;
+    margin-top: 4px;
+  }
+
+  .hero-image {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
   .project1 {
-  padding-bottom: 20px;
-}
+    padding-bottom: 20px;
+  }
+
   .textproject1 {
-  height: 100px;
-  margin: 15px;
-  padding-bottom: 20px;
-}
+    height: 100px;
+    margin: 15px;
+    padding-bottom: 20px;
+  }
+
   .center {
-  text-align: center;
-}
+    text-align: center;
+  }
+
   .berlin-illustration {
-  padding-bottom: 20px;
-}
+    padding-bottom: 20px;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1024px){
-  /* Create thwo columns that floats next to each other */
+@media only screen and (min-width: 1024px) {
 
+  /* Create thwo columns that floats next to each other */
   .pagewrapper {
     margin: 15px;
   }
+
   .row {
     display: flex;
     width: 100%;
@@ -316,6 +316,7 @@ footer {
     gap: 10px;
     justify-content: space-between;
   }
+
   .column {
     display: flex;
     flex-direction: column;
@@ -325,25 +326,30 @@ footer {
     padding: 15px;
     margin: 15px
   }
+
   .project1 {
     padding-bottom: 20px;
     display: block;
     margin: 0 auto;
   }
+
   .center {
     text-align: center;
   }
+
   .hero-image {
     min-width: 300px;
     padding: 30px 10px 10px 0px;
     margin: 10px;
   }
+
   .about-info {
     padding: 30px;
     margin: 30px;
     text-align: left;
     max-width: 750px;
   }
+
   .berlin-illustration {
     padding-bottom: 20px;
     display: block;
