@@ -69,9 +69,8 @@ nav>ul {
 
 .navtoggle.responsive li {
   display: block;
-  text-align: right;
+  text-align: center;
   padding: 10px 0;
-  border-top: 1px solid #915f1c;
 }
 
 .navtoggle.responsive li:last-child {
